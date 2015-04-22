@@ -17,6 +17,6 @@ exports.aceInitInnerdocbodyHead = function(hook_name, args, cb) {
     shTheme = theme;
 
     // TODO - check if this is relevant here - actually I noticed that on a new install the default theme selection is ignored
-    args.iframeHTML.push('<link rel ="stylesheet" type="text/css" href="/static/plugins/ep_codepad/static/css/theme/' + theme + '.css"/>');
+    args.iframeHTML.push('<link rel ="stylesheet" type="text/css" href="../static/plugins/ep_codepad/static/css/theme/' + theme + '.css"/>');
 
 };

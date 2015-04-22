@@ -98,14 +98,14 @@ exports.expressCreateSearchServer = function(hook_name, args, cb) {
             // we assemble the html here and send it directly. 
             var res_send = ''; //'
             res_send += '<!DOCTYPE html><head><title>log</title>';
-            res_send += '<script src="/static/plugins/ep_codepad/static/js/cookies.js" type="text/javascript"></script>';
-            res_send += '<link href="/static/plugins/ep_codepad/static/css/logcolors.css" rel="stylesheet" type="text/css" media="screen" />';
+            res_send += '<script src="../static/plugins/ep_codepad/static/js/cookies.js" type="text/javascript"></script>';
+            res_send += '<link href="../static/plugins/ep_codepad/static/css/logcolors.css" rel="stylesheet" type="text/css" media="screen" />';
             res_send += '<script type="text/javascript">';
             res_send += 'window.onload=toBottom;';
             res_send += 'function toBottom(){window.scrollTo(0, document.body.scrollHeight);}';
             res_send += 'var theme = "' + theme + '";';
             res_send += 'if (getCookie("codepad_theme") != "") theme = getCookie("codepad_theme");';
-            res_send += 'document.write(\'<link rel="stylesheet" type="text/css" href="/static/plugins/ep_codepad/static/css/theme/\'+theme+\'.css">\');';
+            res_send += 'document.write(\'<link rel="stylesheet" type="text/css" href="../static/plugins/ep_codepad/static/css/theme/\'+theme+\'.css">\');';
             res_send += '</script></head><body>';
 
             var lines = data.split('\n');
